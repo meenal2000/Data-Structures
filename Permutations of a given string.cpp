@@ -1,3 +1,4 @@
+// O(n! * n )
 void solve(string s, int i,int n,vector<string> &ans)
 	    {
 	        if(i>=n)
