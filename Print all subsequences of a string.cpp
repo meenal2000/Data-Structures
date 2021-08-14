@@ -1,3 +1,10 @@
+// abc
+// 0 1 2
+// 0 0 0 ""
+// 0 0 1 c
+// 0 1 0 b
+// 0 1 1 bc
+
 #include <bits/stdc++.h>
 using namespace std;
 // Through recursion
