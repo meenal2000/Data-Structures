@@ -1,4 +1,9 @@
 // O(n) space , O(n) time
+//  ] ] ] [ [
+//  1 0 -1 
+// pos - 3 , 4
+// cnt = -1
+//  ans += 3 - 0
 int minimumNumberOfSwaps(string x){
     
     int n = x.size();
