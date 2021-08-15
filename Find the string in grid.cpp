@@ -1,4 +1,5 @@
-// O(n*m* (length of string) )
+// O(n*m* (length of string)*8 )
+// space - O(1)
 vector<int> x{-1,-1,-1,1,1,1,0,0};
     vector<int> y{-1,0,1,-1,0,1,-1,1};
     bool solve(vector<vector<char>>& board,int i,int j,int r,int c, string &word)
