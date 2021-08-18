@@ -1,5 +1,7 @@
 // space - O(n)
 // time - O(n)
+// u could also do without map
+// u could also use priority queue since u have to order acc. to max chars
 string reorganizeString(string s) {
         int n = s.size();
         string ans;
