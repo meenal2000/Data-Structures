@@ -1,4 +1,4 @@
-// O( maxcolSize * log(numRows) )
+// O( n * k * log(k) )
 struct comp {
         bool operator() (pair <int,pair<int,int> > &p1, pair <int,pair<int,int> > &p2)
         {
