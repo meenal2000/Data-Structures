@@ -1,2 +1,2 @@
-# Strings
+# Strings And Heaps
 Strings DSA
