@@ -1,5 +1,5 @@
 Merge K sorted linked lists
-// O((n1+n2) *logk )
+// O( (n*k) *logk )
 Node* merge2Lists(Node *l1, Node *l2)
     {
         if(!l1)
