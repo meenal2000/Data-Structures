@@ -44,6 +44,12 @@ int findMaxLen(string str) {
                 res = max(res , 2*l);
         }
         r = 0; l = 0;
+        // ( ( )
+        //l   1 0
+         //r  1 1
+        //l 1 2 2
+        // r 0 0 1
+        // 
         for(int i=n-1; i>=0; --i)
         {
             if(str[i] == ')')
