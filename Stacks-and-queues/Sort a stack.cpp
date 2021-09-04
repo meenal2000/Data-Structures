@@ -1,5 +1,6 @@
 // time - O(n2)
 // space - O(n)
+// Alternate way - Can also be done using a temporary stack and two while loops but complexity will be same almost
 void insert(stack<int> &s, int top)
 {
     if(s.size()==0 || top>=s.top())
