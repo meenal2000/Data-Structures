@@ -31,3 +31,41 @@ int kthElement(int arr1[], int arr2[], int n1, int n2, int k)
 	    return arr1[k-1];
 	   return arr2[k-n1-1];
     }
+// another approach
+int kthElement(int arr1[], int arr2[], int n1, int n2, int k_req)
+    {
+	   int i = 0;
+	   int j = 0;
+	   int k = 0;
+	   while(i<n1 && j<n2)
+	   {
+	       if(arr1[i] < arr2[j])
+	       {
+	           ++k;
+	           if(k==k_req)
+	            return arr1[i];
+	           ++i;
+	       }
+	       else
+	       {
+	           ++k;
+	           if(k==k_req)
+	            return arr2[j];
+	           ++j;
+	       }
+	   }
+	   while(i < n1)
+       {
+           ++k;
+           if(k==k_req)
+            return arr1[i];
+           ++i;
+       }
+       while(j < n2)
+       {
+           ++k;
+           if(k==k_req)
+            return arr2[j];
+           ++j;
+       }
+    }
