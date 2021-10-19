@@ -2,7 +2,7 @@ int minCoins(int coins[], int M, int V)
 	{ 
 	   int dp[M+1][V+1];
 	   for(int i=0; i<=V; ++i)
-	        dp[0][i] = INT_MAX-1;
+	        dp[0][i] = INT_MAX-1; // we are storing -1 here, because if at all it gets in the dp formula then, while doing +1 we don't go out of bound
 	   for(int i=0; i<=M; ++i)
 	        dp[i][0] = 0;
 	   for(int i=1; i<=V; ++i)
