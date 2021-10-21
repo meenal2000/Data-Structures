@@ -1,5 +1,9 @@
 // same as LCS
 // Just reverse the original string and find the LCS btw the two
+// the original property is always fulfilled that of palindrome 
+// that is as soon as we found a match 
+// we look for another match till i-1, j-1
+// and since string is reversed we can ensure , the palindromic property of i , n-i-1 alwyas holds true and that new pair is inside another pair
 int longestPalindromeSubseq(string s) {
         string t = s;
         reverse(t.begin() , t.end());
